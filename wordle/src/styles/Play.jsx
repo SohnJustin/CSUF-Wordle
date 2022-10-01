@@ -1,18 +1,22 @@
 import React from "react";
-import { Background, Introduction } from "./RouteStyle/HomePage.style";
+import { Wrapper, Introduction } from "./RouteStyle/HomePage.style";
 import { Link } from "react-router-dom";
+import { GlobalBackground } from "../styles/RouteStyle/GlobalBackground.style";
+import ReplayIcon from "@mui/icons-material/Replay";
 
 function Play() {
   return (
-    <Background>
+    <Wrapper>
+      <GlobalBackground />
       <Introduction>
         {" "}
         This is where the Game is going to be played{" "}
       </Introduction>
-      <button>
-        <Link to="/"> Back to Home Screen </Link>
-      </button>
-    </Background>
+      Play:
+      <Link to="/">
+        <ReplayIcon />
+      </Link>
+    </Wrapper>
   );
 }
 

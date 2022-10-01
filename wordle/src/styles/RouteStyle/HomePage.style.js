@@ -1,11 +1,5 @@
 import styled from "styled-components";
 
-const Background = styled.div`
-  background-color: #00274c;
-  width: 100%;
-  height: 100%;
-`;
-
 const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
@@ -20,4 +14,4 @@ const Introduction = styled.h1`
   text-align: center;
   justify-content: center;
 `;
-export { Background, Wrapper, Introduction };
+export { Wrapper, Introduction };

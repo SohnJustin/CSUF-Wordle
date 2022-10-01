@@ -6,4 +6,4 @@ const Background = styled.div`
   height: 100%;
 `;
 
-export { Background };
+

@@ -1,20 +1,23 @@
 //check the uer input
 function checkUserGuess(userGuess) {
-  //checkUserGuess===========================================================
+  const baseList = ["zero" ,"zero", "three", "three", "five", "five", "seven", "seven", "nine", "nine"];
+
   //compare the user's guess to the actual answer string
-  if (userGuess == this.solution) {
-    //guessed correctly!
-    return true;
-  } //guessed correctly!
-  //we don't need an else because the if statement exits this function upon true
-  //for now the alternative is that hte user's guess is incorrect
-  return false;
-  //later this statement will be replaced with code to check all the letters and their positions
-} //checkUserGuess===========================================================
-//============================================================================
-
-//fetch a word from the wordlist
-//for a future iteration
-//using the results of the random number generator
-
+  //we can actually check the whole string at once!
+  //sources https://www.w3schools.com/js/js_string_methods.asp
+  // https://www.w3schools.com/js/js_arrays.asp
+  if(userGuess == correctAnswer)
+    {//guessed correctly!
+    //fill an array with the color green
+    const colorList = ["green"];
+    //start with 1 because already have the value of [0]
+    for(i = 1; i < correctAnswer.length; ++i)
+      {//fill it with green
+      colorList.push("green");
+      }//fill it with green
+    //return true;
+    //finished filling with green, now return it
+    return colorList;
+    }//guessed correctly!
+  }
 export default checkUserGuess;
