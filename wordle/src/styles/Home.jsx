@@ -10,10 +10,10 @@ function Home() {
   return (
     <Wrapper>
       <GlobalBackground />
-      <Introduction>This is front page of our project </Introduction>
+      <Introduction>CPSC 362 Home Page </Introduction>
+      Play:
       <Link to="/play">
-        Play:
-        <PlayArrowIcon />
+        <PlayArrowIcon style={{ color: "orange" }} fontSize="large" />
       </Link>
     </Wrapper>
   );

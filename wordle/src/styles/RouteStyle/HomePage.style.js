@@ -14,4 +14,6 @@ const Introduction = styled.h1`
   text-align: center;
   justify-content: center;
 `;
+
+const ButtonStyle = styled.button``;
 export { Wrapper, Introduction };
