@@ -1,13 +1,7 @@
 import styled from "styled-components";
 
-const Background = styled.div`
-  background-color: #00274c;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-`;
-
 const GameBoard = styled.div`
+  margin-top: 15%;
   display: flex;
   align-items: center;
   flex-direction: column;

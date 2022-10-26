@@ -2,18 +2,30 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   @media only screen and (max-width: 600px) {
     flex-direction: column;
   }
 `;
-const Introduction = styled.h1`
-  width: 60%;
-  font-size: 65px;
+const Introduction = styled.div`
+  font-size: 30px;
   color: #ff7900;
-  text-align: center;
+  display: flex;
+  align-items: center;
   justify-content: center;
 `;
 
-const ButtonStyle = styled.button``;
-export { Wrapper, Introduction };
+const Prompt = styled.div`
+  font-size: 20px;
+  color: #ff7900;
+  display: flex;
+  align-items: center;
+`;
+
+const NamingList = styled.ul`
+  color: white;
+  display: flex;
+  font-size: 20px;
+`;
+
+export { Introduction, Wrapper, NamingList, Prompt };
