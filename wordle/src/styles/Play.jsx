@@ -15,17 +15,10 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 function Play() {
-  const darkTheme = createTheme({
-    palette: {
-      mode: "dark",
-    },
-  });
-
   return (
     <Wrapper>
-      <GlobalBackground />
-      <Introduction>CSUF Themed Wordle Play Page </Introduction>
-      <ThemeProvider theme={darkTheme}>
+      <GlobalBackground>
+        <Introduction>CSUF Themed Wordle Play Page </Introduction>
         <CssBaseline />
         <GameBoard>
           <FilledBox>
@@ -76,11 +69,11 @@ function Play() {
             <TextField />
           </Box>
         </GameBoard>
-      </ThemeProvider>
-      Home:
-      <Link to="/">
-        <ReplayIcon style={{ color: "orange" }} fontSize="large" />
-      </Link>
+        Home:
+        <Link to="/">
+          <ReplayIcon style={{ color: "orange" }} fontSize="large" />
+        </Link>
+      </GlobalBackground>
     </Wrapper>
   );
 }
